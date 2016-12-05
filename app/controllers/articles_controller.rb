@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: [:edit, :update, :show, :destroy]
   
   # Create article index of all articles
   def index
@@ -12,7 +13,7 @@ class ArticlesController < ApplicationController
   
   # Method for editing articles
   def edit
-    @article = Article.find(params[:id])
+    
   end
   
   # Method for creating a new article with messages or renders the 'new' view
@@ -28,7 +29,6 @@ class ArticlesController < ApplicationController
   
   # Method for updating articles or renders the 'edit' view
   def update
-    @article = Article.find(params[:id])
     if @article.update(article_params)
       flash[:notice] = "Article was successfully updated"
       redirect_to article_path(@article)
@@ -39,20 +39,22 @@ class ArticlesController < ApplicationController
   
   # Show the article
   def show
-    @article = Article.find(params[:id])
+    
   end
   
   #Destroy the selected article
   def destroy
-    @article = Article.find(params[:id])
     @article.destroy
     flash[:notice] = "Article was successfully deleted"
     redirect_to articles_path
   end
   
   private
-  #Articles have a title and a description
-  def article_params
-    params.require(:article).permit(:title, :description)
-  end
+    def article_params
+      params.require(:article).permit(:title, :description)
+    end
+    
+    def set_article
+      @article = Article.find(params[:id])
+    end
 end
