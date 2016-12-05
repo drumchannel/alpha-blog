@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Homepage</title>
-        <style>
-            .container {
-                width:80%;
-                margin-left:auto;
-                margin-right:auto;
-                display: block;
-            }
-            header {
-                text-align: center;
-            }
-            img {
-                width: 100%;
-                height: auto;
-            }
-            .col-4 {
-                width: 33%;
-                display: inline-block;
-                float: left
-            }
-            .card {
-                padding: 5%; 
-                margin: 2%; 
-                border: 1px solid #efefef; 
-                box-shadow: 0px 5px 5px -5px rgba(0,0,0,.3);
-            }
-        </style>
-    </head>
-</html>
-<body>
-    <div class="container">
-        <header>
-            <h1>Welcome to the Alpha Blog</h1>
-            <h3>Where subheadings are slightly less pronounced than the page titles</h3>
-            <%= link_to 'Home', root_path %> | 
-            <%= link_to 'About', about_path %> | 
-            <%= link_to 'Article', articles_path %>
-        </header>
-    </div>
-</body>
+<div class="container">
+    <header>
+        <h1>Welcome to the Alpha Blog</h1>
+        <h3>Where subheadings are slightly less pronounced than the page titles</h3>
+        <%= link_to 'Home', root_path %> | 
+        <%= link_to 'About', about_path %> | 
+        <%= link_to 'Article', articles_path %>
+    </header>
+</div>
 
