@@ -13,7 +13,6 @@ class ArticlesController < ApplicationController
   
   # Method for editing articles
   def edit
-    
   end
   
   # Method for creating a new article with messages or renders the 'new' view
@@ -40,7 +39,6 @@ class ArticlesController < ApplicationController
   
   # Show the article
   def show
-    
   end
   
   #Destroy the selected article
