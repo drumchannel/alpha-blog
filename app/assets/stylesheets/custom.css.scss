@@ -963,3 +963,24 @@ body {
 .hero {
   background-image: url("../images/violet.jpg");
 }
+
+.badge {
+  transition: ease-in-out all .2s;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  margin: 0 2px;
+  padding: 1rem;
+  background: $gray-darker;
+  &:hover {
+    background: $brand-primary;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.input-checkbox input {
+  width: auto !important;
+}
