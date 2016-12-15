@@ -1,7 +1,3 @@
-body {
-  padding-top: 50px;
-}
-
 $bootstrap-sass-asset-helper: false !default;
 // Cosmo 3.3.7
 // Variables
@@ -969,7 +965,7 @@ body {
   background: image-url('bg.jpg');
   background-size: cover;
   background-position: center;
-  margin: -1px -15px 0;
+  margin: -22px -15px 0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -999,8 +995,4 @@ body {
 
 .input-checkbox input {
   width: auto !important;
-}
-
-.navbar-default {
-  margin-bottom: 0;
 }
