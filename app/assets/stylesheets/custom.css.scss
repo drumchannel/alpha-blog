@@ -961,11 +961,19 @@ body {
 }
 
 .hero {
+  position: relative;
   background: image-url('bg.jpg');
   background-size: cover;
   background-position: center;
-  margin: -21px -15px 0;
+  margin: -1px -15px 0;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-center {
+  
 }
 
 .badge {
@@ -987,4 +995,8 @@ body {
 
 .input-checkbox input {
   width: auto !important;
+}
+
+.navbar-default {
+  margin-bottom: 0;
 }
